@@ -10,7 +10,7 @@
 </head>
 <body>
   <header id="main_navigation" class="clearfix">
-  		<%= link_to "Roger París", posts_path, class: "name" %>
+  		<%= link_to "Roger París", root_path, class: "name" %>
   		<nav>
   			<%= link_to "Articles", posts_path %>
   			<%= link_to "Projects", posts_path %>
@@ -18,7 +18,15 @@
 
   		</nav>
   	</header>
-<%= yield %>
+  <%= yield %>
+  <footer id="main_footer">
+		<p class="copyright">&copy;2016 Roger Paris</p>
+		<nav>
+			<a href="http://twitter.com/rogerparis_11" target="_blank"><i class="fa fa-twitter"></i></a>
+			<a href="http://facebook.com/cheliky" target="_blank"><i class="fa fa-facebook"></i></a>
+			<a href="http://github.com/rogerparis" target="_blank"><i class="fa fa-github"></i></a>
+		</nav>
+	</footer>
 
 </body>
 </html>
